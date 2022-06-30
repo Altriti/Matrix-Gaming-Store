@@ -1,0 +1,808 @@
+
+body, html{
+    height: 100%;
+    margin:0;
+    background-color:rgb(253, 246, 235);
+  }
+
+  #logo-img{
+    width:20px;
+    height:20px;
+  }
+
+  
+  #videowrapper{  
+    position: relative;
+    overflow: hidden;
+    animation-name: videowrapper-animation;
+    animation-duration: 1s;
+  
+  } 
+  @keyframes videowrapper-animation{
+    from{top: -100%;}
+    to{top: 0%;}
+  }
+  #fullScreenDiv{
+    min-height: 100%; 
+    height: 100vh;
+    width: 100vw;
+    padding:0;
+    margin: 0;
+    background-color: gray;
+    position: relative;
+  }
+  
+  #video{    
+    width: 100vw; 
+    height: auto;
+    margin: auto;
+    display: block;
+  }
+  @media (min-aspect-ratio: 16/9) {
+  #video{
+    width: 100vw; 
+    height:auto;
+  }
+  }
+  
+  @media (max-aspect-ratio: 16/9) {
+  #video {
+    height: 100vh; 
+    width:auto;
+    margin-left: 50vw;
+    transform: translate(-50%);
+  }
+  }
+  
+  #videoMessage{
+    width: 100%; 
+    height: 100%;
+    position: absolute; 
+    top: 0; 
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  /*Trendings*/
+  .trending-div{
+  margin:0% 8.7% 3% 8.7%;
+  }
+  .trending-games{
+  display:inline;
+  width:390px;
+  height:220px;
+  padding:1% 1% 0% 1%;
+  }
+  @font-face{
+  src: url(Fonts/Cyberpunk.ttf);
+  font-family: cyb;
+  }
+  #cyberpunk-header-font{
+    position: relative;
+  font-family: cyb;
+  color: rgb(255, 251, 0);
+  font-size: 80px;
+  animation-name: cyberpunk-trailer-text;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  }
+  @keyframes cyberpunk-trailer-text{
+    from{left: -900%;}
+    to{left: 0%;}
+  }
+  @font-face{
+    src: url(Fonts/Valorantfont.ttf);
+    font-family:valo;
+  }
+  #header-text{
+    position: relative;
+    color:white;
+    font-family:valo;
+    font-size: 20px;
+    margin-bottom: 0%;
+    animation-name: header-text-animation;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+  }
+  @keyframes header-text-animation{
+    from{right: -900%;}
+    to{right: 0%;}
+  }
+  #trending-div{
+    position: absolute;
+    bottom: -5%;
+    margin-left: 57px;
+    font-family:valo ;
+    font-size: 60px;
+    font-style: bold;
+    color:rgb(87, 21, 21);
+    animation-name: trending-div-animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+  }
+  
+  @keyframes trending-div-animation{
+    from{bottom: -54%;}
+    to{bottom: -55.5%;}
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  #divsmall{
+  width: 100%;
+  height: 150px;
+  }
+  #main-div{
+  /*border: 1px solid black;*/
+  width: 100%;
+  height: 500px;
+  }
+  .madhsia{
+  /*border: 1px solid black;*/
+  width: 506px;
+  height: 500px;
+  float: left;
+  display: inline;
+  box-sizing: border-box;
+  }
+  #img-size-cyberpunk{
+  padding-top:40px ;
+  padding-left: 60px;
+  }
+
+  
+  
+  
+  
+  
+  #maintextspace-cyberpunk{
+  padding-top: 0px;
+  padding-left: 12%;
+  font-family: 'Big Shoulders Stencil Text', cursive;
+  font-size: 30px;
+  }
+  #paragraph-cyberpunk{
+  margin-left: 10%;
+  padding-right: 5%;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  margin-bottom: 10px;
+  }
+  #cyberpunk-link{
+  margin-right: 30px;
+  color: white;
+  background-color:black ;
+  text-decoration: none;
+  float: right;
+  padding:10px;
+  border: 1px solid black;
+  font-family: val;
+  margin-right: 60px;
+  }
+  #cyberpunk-link:hover{
+    background-color:rgb(87, 21, 21);
+    color: white;
+    font-size: 19px;
+    border-radius: 35%; 
+    padding: 15px;
+    -webkit-transition:ease-out 0.7s;
+  
+  }
+  
+  
+  #img-size-avc{
+  padding-top:40px ;
+  padding-left: 60px;
+  }
+  #maintextspace-avc{
+  padding-top: 0px;
+  padding-left: 12%;
+  font-family: 'Big Shoulders Stencil Text', cursive;
+  font-size: 30px;
+  }
+  #paragraph-avc{
+  margin-left: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  margin-bottom: 10px;
+  }
+  #avc-link{
+  margin-right: 30px;
+  color: white;
+  background-color:black ;
+  text-decoration: none;
+  float: right;
+  padding:10px;
+  border: 1px solid black;
+  font-family: val;
+  }
+  #avc-link:hover{
+    background-color:rgb(87, 21, 21);
+    color: white;
+    font-size: 19px;
+    border-radius: 35%; 
+    padding: 15px;
+    -webkit-transition:ease-out 0.7s;
+  }
+  
+  #img-size-spom{
+  padding-top:40px ;
+  padding-left: 60px;
+  }
+  #maintextspace-spom{
+  padding-top: -6px;
+  padding-left: 12%;
+  font-family: 'Big Shoulders Stencil Text', cursive;
+  font-size: 30px;
+  }
+  #paragraph-spom{
+  margin-left: 5%;
+  padding-left: 5%;
+  margin-right: 5%;
+  padding-right: 5%;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  margin-bottom: 10px;
+  }
+  #spom-link{
+  margin-right: 30px;
+  color: white;
+  background-color:black ;
+  text-decoration: none;
+  float: right;
+  padding:10px;
+   border: 1px solid black;
+   font-family: val;
+  }
+  #spom-link:hover{
+    background-color:rgb(87, 21, 21);
+    color: white;
+    font-size: 19px;
+    border-radius: 35%; 
+    padding: 15px;
+    -webkit-transition:ease-out 0.7s;
+  }
+  #sop-divsmall{
+  width: 100%;
+  height: 150px;
+  }
+    
+   #sop-main-div{
+  /*border: 1px solid black;*/
+  width: 100%;
+  height: 500px;
+  }
+    
+  .madhsia-sop{
+  /*border: 1px solid black;*/
+  width: 506px;
+  height: 500px;
+  float: left;
+  display: inline;
+  box-sizing: border-box;
+  }
+   #stillontop-div{
+  position: absolute;
+  bottom: -284%;
+  margin-left: 57px;
+  font-family:valo ;
+  font-size: 60px;
+  font-style: bold;
+  color: rgb(87, 21, 21);
+  animation-name: stillontop-div-animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+  }
+  @keyframes stillontop-div-animation{
+    from{bottom: -282.5%;}
+    to{bottom: -284%;}
+  }  
+  #img-size-fortnite{
+  padding-top:40px ;
+  padding-left: 60px;
+  }
+  #maintextspace-fortnite{
+   padding-top: 5px;
+   padding-left: 12%;
+  font-family: 'Big Shoulders Stencil Text', cursive;
+  font-size: 30px;
+  }
+  #paragraph-fortnite{
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  margin-bottom: 10px;
+  }
+  #fortnite-link{
+  margin-right: 30px;
+  color: white;
+  background-color:black ;
+  text-decoration: none;
+  float: right;
+  padding:10px;
+  border: 1px solid black;
+  font-family: val;
+  }
+  #fortnite-link:hover{
+    background-color:rgb(87, 21, 21);
+    color: white;
+    font-size: 19px;
+    border-radius: 35%; 
+    padding: 15px;
+    -webkit-transition:ease-out 0.7s;
+  }
+    
+    
+  #img-size-lol{
+  padding-top:40px ;
+  padding-left: 60px;
+  }
+  #maintextspace-lol{
+  padding-top: 5px;
+  padding-left: 12%;
+   font-family: 'Big Shoulders Stencil Text', cursive;
+   font-size: 30px;
+  }
+  #paragraph-lol{
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  margin-bottom: 10px;
+  }
+  #lol-link{
+  margin-right: 30px;
+  color: white;
+  background-color:black ;
+  text-decoration: none;
+  float: right;
+  padding:10px;
+  border: 1px solid black;
+  font-family: val;
+  }
+  #lol-link:hover{
+    background-color:rgb(87, 21, 21);
+    color: white;
+    font-size: 19px;
+    border-radius: 35%; 
+    padding: 15px;
+    -webkit-transition:ease-out 0.7s;
+  }
+    
+   #img-size-csgo{
+  padding-top:40px ;
+   padding-left: 60px;
+  }
+  #maintextspace-csgo{
+   padding-top: 5px;
+   padding-left: 12%;
+  font-family: 'Big Shoulders Stencil Text', cursive;
+  font-size: 30px;
+  }
+  #paragraph-csgo{
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-right: 5%;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+   margin-bottom: 10px;
+   }
+  #csgo-link{
+  margin-right: 30px;
+  color: white;
+  background-color:black ;
+  text-decoration: none;
+  float: right;
+  padding:10px;
+  border: 1px solid black;
+  font-family: val;
+   }
+   #csgo-link:hover{
+    background-color:rgb(87, 21, 21);
+    color: rgb(139, 50, 50);
+    font-size: 19px;
+    border-radius: 35%; 
+    padding: 15px;
+    -webkit-transition:ease-out 0.7s;
+  }
+  #recc-divsmall{
+  width: 100%;
+  height: 150px;
+   }
+      
+  #recc-main-div{
+  /*border: 1px solid black;*/
+  width: 100%;
+  height: 500px;
+  }
+      
+  .madhsia-recc{
+  /*border: 1px solid black;*/
+  width: 506px;
+  height: 500px;
+  float: left;
+  display: inline;
+  box-sizing: border-box;
+  }
+  #recommended-div{
+  position: absolute;
+  bottom: -399%;
+  margin-left: 57px;
+  font-family:valo ;
+  font-size: 60px;
+  font-style: bold;
+  color: rgb(87, 21, 21);
+  animation-name: recommended-div-animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+  }
+  @keyframes recommended-div-animation{
+    from{bottom: -398%;}
+    to{bottom: -399.5%;}
+  }
+  #img-size-rl{
+  padding-top:40px ;
+  padding-left: 60px;
+  width: 390px;
+   height: 220px;
+  }
+  #maintextspace-rl{
+  padding-top: 5px;
+  padding-left: 12%;
+  font-family: 'Big Shoulders Stencil Text', cursive;
+  font-size: 30px;
+  }
+  #paragraph-rl{
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-left: 5%;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  margin-bottom: 10px;
+  }
+  #rl-link{
+  margin-right: 30px;
+  color: white;
+  background-color:black ;
+  text-decoration: none;
+  float: right;
+  padding:10px;
+  border: 1px solid black;
+  font-family: val;
+  }
+  #rl-link:hover{
+    background-color:rgb(87, 21, 21);
+    color: white;
+    font-size: 19px;
+    border-radius: 35%; 
+    padding: 15px;
+    -webkit-transition:ease-out 0.7s;
+  }
+      
+      
+  #img-size-valorant{
+  padding-top:40px ;
+  padding-left: 60px;
+  }
+  #maintextspace-valorant{
+  padding-top: 5px;
+  padding-left: 12%;
+  font-family: 'Big Shoulders Stencil Text', cursive;
+  font-size: 30px;
+  }
+  #paragraph-valorant{
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  margin-bottom: 10px;
+  }
+  #valorant-link{
+  margin-right: 30px;
+  color: white;
+  background-color:black ;
+  text-decoration: none;
+  float: right;
+  padding:10px;
+  border: 1px solid black;
+  font-family: val;
+  }
+  #valorant-link:hover{
+    background-color:rgb(87, 21, 21);
+    color: white;
+    font-size: 19px;
+    border-radius: 35%; 
+    padding: 15px;
+    -webkit-transition:ease-out 0.7s;
+  }
+      
+  #img-size-au{
+  padding-top:40px ;
+  padding-left: 60px;
+  }
+  #maintextspace-au{
+  padding-top: 5px;
+  padding-left: 12%;
+  font-family: 'Big Shoulders Stencil Text', cursive;
+  font-size: 30px;
+  }
+  #paragraph-au{
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  margin-bottom: 10px;
+  }
+  #au-link{
+  margin-right: 30px;
+  color: white;
+  background-color:black ;
+  text-decoration: none;
+  float: right;
+  padding:10px;
+  border: 1px solid black;
+  font-family: val;
+  }
+  #au-link:hover{
+    background-color:rgb(87, 21, 21);
+    color: white;
+    font-size: 19px;
+    border-radius: 35%; 
+    padding: 15px;
+    -webkit-transition:ease-out 0.7s;
+  }
+  #footer-div{
+    text-align: center;
+    border: 1px solid black;
+    width: 100%;
+    height: 50%;
+    background-color: black;
+  }
+  #footer-p{
+    height: 100%;
+    width: 50%;
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    color:white;
+    margin-left:20%;
+    float: left;
+  }
+  
+  #socials-footer li{
+    display: inline;
+    
+  }
+  #socials-footer{
+    margin-left: -15%;
+  }
+  .socials-li{
+   margin: 2%;
+  }
+  #cc{
+    color: gray;
+  }
+  #ad{
+    width: 100%;
+    height: auto;
+  }
+  #lol-ad{
+    position: relative;
+  }
+  #videolol{
+    width: 100%;/*1518 px full width*/
+  }
+  
+  #lol-font-img{
+    position: absolute;
+    top: 40%;
+    left: 1%;
+    z-index:1;
+    width: 500px;
+  
+    animation-name: lol-font-img;
+    animation-duration: 2.031s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  
+    /*animation-timing-function: cubic-bezier(.43,.05,.06,1.35);*/
+  }
+  
+  
+  
+  
+  
+  
+  @font-face{
+    src: url(Fonts/lolfont.ttf);
+    font-family:lol;
+  }
+  #s11-add{
+  position: absolute;
+  right:1% ;
+  bottom: 0.5%;
+  /*animation: lol-font-img 2s infinite;*/
+  }
+  
+  @keyframes lol-font-img{
+    0%{width: 500px;}
+    
+    100%{width: 525px;}
+  }
+  
+  
+  
+  
+  #s11{
+    font-family: lol;
+    font-size: 60px;
+    font-weight: 500;
+    font-style: italic;
+    text-decoration: rgb(30, 255, 0) underline;
+    color: rgb(21, 255, 0);
+  }
+  #small-text{
+    position: absolute;
+    bottom: 1%;
+    font-size: 20px;
+    font-family: lol;
+    right: 1%;
+    color: aquamarine;
+  }
+  .game-thumbnail:hover{
+    transition-duration: 0.7s;
+    animation-name: hover;
+    animation-duration: 2s;
+    filter: grayscale(50%) brightness(45%) sepia(100%) hue-rotate(-50deg) saturate(600%) ;
+  }
+  .madhsia:hover{
+    color:red;
+    transition-duration: 0.7s;
+  }
+  .madhsia-sop:hover{
+    color:red;
+    transition-duration: 0.7s;
+  }
+  .madhsia-recc:hover{
+    color:red;
+    transition-duration: 0.7s;
+  }
+
+  @keyframes game{
+    0%{top: 40%;left: 5%;width: 100px;height: 100px;transform: rotate(180deg);}
+    10%{top: 40%;left: 20%;width: 75px;height: 50px;}
+    20%{top: 1%;left: 20%;width: 60px;height: 75px;}
+    30%{top: 1%;left: 40%;width: 50px;height: 50px; background-color: yellow;}
+    40%{top: 80%;left: 40%;width: 50px;height: 50px;}
+    50%{top: 80%;left: 80%;width: 45px;height: 45px;}
+    60%{top: 20%;left: 50%;width: 43px;height: 43px;transform: rotate(180deg);background-color: rgb(25, 0, 255);}
+    70%{top: 1%;left: 85%;width: 40px;height: 40px;border-radius: 50%;}
+    80%{top: 20%;left: 70%;width: 37px;height: 37px;border-radius: 50%;background-color: rgb(255, 0, 0);}
+    90%{top: 70%;left: 90%;width: 35px;height: 35px;border-radius: 70%;background-color: rgb(0, 0, 0);}
+    100%{top: 80%;left: 93%;width: 30px;height: 30px;border-radius: 75%;background-color: rgb(0, 0, 0);}
+    
+  
+  }
+
+  .lets-play{
+    width: 100%;
+    height: 400px;
+    background-color: black;
+    color: rgb(255, 0, 85);
+    font-family: valo;
+    font-style: italic;
+    text-decoration: underline ;
+    font-size: 20px;
+  }
+  .lets-play-text, ul, li{
+    position: relative;
+    left: 2%;
+    margin: 1%;
+  }
+
+  #horizontal-design-video-lines{
+    position: absolute;
+    top: 95%;
+    left: 0%;
+    width: 100%;
+    height: 1px;
+    background-color: yellow;
+    z-index: 1;
+    animation-name: horizontal-design-video-lines;
+    animation-duration: 2.5s;
+  
+  }
+  #horizontal-design-video-lines-2{
+    position: absolute;
+    top: 95.4%;
+    left: 0%;
+    width: 100%;
+    height: 1px;
+    background-color: yellow;
+    z-index: 1;
+    animation-name: horizontal-design-video-lines-2;
+    animation-duration: 2.5s;
+  }
+
+  @keyframes horizontal-design-video-lines {
+    0%{top: 0%; left: 0%;}
+    100%{top: 95%; left: 0%;}
+  }
+  @keyframes horizontal-design-video-lines-2 {
+    0%{top: 0%; left: 0%;}
+    100%{top: 95.4%;; left: 0%;}
+  }
+  #ad-design-lines{
+    top: 229.5%;
+    background-color:rgb(87, 21, 21);
+    position: absolute;
+    height: 20px;
+    width: 100%;
+    z-index: 1;
+  }
+  #ad-design-lines1{
+    top: 230.55%;
+    background-color: yellow;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    z-index: 2;
+  }
+  #ad-design-lines2{
+    top: 345%;
+    background-color:rgb(87, 21, 21);
+    position: absolute;
+    height: 20px;
+    width: 100%;
+    z-index: 1;
+  }
+  #ad-design-lines3{
+    top: 346%;
+    background-color: yellow;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    z-index: 2;
+  }
+  
