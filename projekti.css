@@ -1,15 +1,48 @@
-
-body, html{
+.header-div{
+    background-color:black;
+    font-style:oblique;
+    font-size: 16px;
+  }
+  .header-div a{
+    color:white;
+    padding: 25px;
+    text-decoration: none;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    font-size: 12.5px;
+  }
+  body, html{
     height: 100%;
     margin:0;
     background-color:rgb(253, 246, 235);
   }
-
+  .header-hover {
+    display: inline-block;
+    -webkit-transform: perspective(1px) translateZ(0);   
+  }
+  .header-hover:before {
+    content: "";
+    position: absolute;
+    padding:0px;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background:rgb(255, 238, 0);
+    height: 5px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    transition-duration: 0.3s;  
+  }
+  .header-hover:hover:before, .header-hover:focus:before, .header-hover:active:before {
+    right: 0;
+  }
   #logo-img{
     width:20px;
     height:20px;
   }
-
+  #login-header{
+    position: relative;
+    left: 68%;
+  }
   
   #videowrapper{  
     position: relative;
@@ -166,7 +199,24 @@ body, html{
   padding-top:40px ;
   padding-left: 60px;
   }
-
+  /*#img-size-cyberpunk:hover{
+    animation-name: hover;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    position: relative;
+    animation-direction: alternate;
+  }
+  
+  @keyframes hover{
+  
+    
+    0%{left: 0%;}
+    50%{left: 5%;}
+    100%{left: -5%;}
+  
+    /*from{left: 0%; background-color: red;}
+    to{left: 100%; background-color: red;}}
+    */
   
   
   
@@ -708,7 +758,26 @@ body, html{
     color:red;
     transition-duration: 0.7s;
   }
-
+  #the-game{
+    width: 100%;
+    height: 90%;
+    background-color: black;
+  }
+  #game-circle{
+    position: relative;
+    top: 40%;
+    left: 5%;
+    width: 100px;
+    height: 100px;
+    background-color: turquoise;
+  }
+  #game-circle:hover{
+    animation-name: game;
+    animation-duration: 30s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    z-index: 1;
+  }
   @keyframes game{
     0%{top: 40%;left: 5%;width: 100px;height: 100px;transform: rotate(180deg);}
     10%{top: 40%;left: 20%;width: 75px;height: 50px;}
@@ -724,7 +793,14 @@ body, html{
     
   
   }
-
+  #final-circle-destination{
+    position: relative;
+    top: 75.4%;
+    left: 92.9%;
+    width: 32px;
+    height: 32px;
+    background-color: white;
+  }
   .lets-play{
     width: 100%;
     height: 400px;
@@ -740,7 +816,28 @@ body, html{
     left: 2%;
     margin: 1%;
   }
-
+  #vertical-design-video-lines{
+    position: absolute;
+    top: 10%;
+    left: 13%;
+    width: 1px;
+    height: 754px;
+    background-color: yellow;
+    z-index: 1;
+    animation-name: vertical-design-video-lines;
+    animation-duration: 2.5s;
+  }
+  #vertical-design-video-lines-2{
+    position: absolute;
+    top: 10%;
+    left: 13.3%;
+    width: 1px;
+    height: 754px;
+    background-color: yellow;
+    z-index: 1;
+    animation-name: vertical-design-video-lines-2;
+    animation-duration: 2.5s;
+  }
   #horizontal-design-video-lines{
     position: absolute;
     top: 95%;
@@ -764,7 +861,14 @@ body, html{
     animation-name: horizontal-design-video-lines-2;
     animation-duration: 2.5s;
   }
-
+  @keyframes vertical-design-video-lines {
+    0%{top: 0%; left: 100%;}
+    100%{top: 10%; left: 13%;}
+  }
+  @keyframes vertical-design-video-lines-2 {
+    0%{top: 0%; left: 100%;}
+    100%{top: 10%; left: 13.3%;}
+  }
   @keyframes horizontal-design-video-lines {
     0%{top: 0%; left: 0%;}
     100%{top: 95%; left: 0%;}
