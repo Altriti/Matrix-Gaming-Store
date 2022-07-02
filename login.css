@@ -1,0 +1,181 @@
+body, html{
+    height: 100%;
+    margin:0;
+    background-color:rgb(253, 246, 235);
+}
+.header-div{
+    position:absolute;
+    top: 0%;
+    width: 100%;
+    background-color:black;
+    font-style:oblique;
+    font-size: 16px;
+}
+  .header-div a{
+    color:white;
+    padding: 25px;
+    text-decoration: none;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    font-size: 12.5px;
+  }
+.header-hover {
+    display: inline-block;
+    -webkit-transform: perspective(1px) translateZ(0);   
+}
+.header-hover:before {
+    content: "";
+    position: absolute;
+    padding:0px;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background:rgb(255, 238, 0);
+    height: 5px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    transition-duration: 0.3s;  
+}
+.header-hover:hover:before, .header-hover:focus:before, .header-hover:active:before {
+    right: 0;
+}
+  #logo-img{
+    width:20px;
+    height:20px;
+  }
+  #login-header{
+    position: relative;
+    left: 68%;
+  }
+body {
+    --color-primary: rgb(100, 24, 24);
+    --color-primary-dark: black;
+    --color-secondary: rgb(100, 24, 24);
+    --color-error: red;
+    --color-success: green;
+    --border-radius: 4px;
+
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    background: url(./background.jpg);
+    background-size: cover;
+    background-image:url(Photos/valhalla.jpg);
+}
+
+.container {
+    filter: none;
+    width: 400px;
+    max-width: 400px;
+    margin: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    border-radius: var(--border-radius);
+}
+
+
+.container,
+.form__input,
+.form__button {
+    font: 500 1rem 'Quicksand', sans-serif;
+}
+
+.form--hidden {
+    display: none;
+}
+
+.form > *:first-child {
+    margin-top: 0;
+}
+
+.form > *:last-child {
+    margin-bottom: 0;
+}
+
+.form__title {
+    margin-bottom: 2rem;
+    text-align: center;
+    color: rgb(100, 24, 24);
+}
+
+.form__message {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.form__message--success {
+    color: var(--color-success);
+}
+
+.form__message--error {
+    color: var(--color-error);
+}
+
+.form__input-group {
+    margin-bottom: 1rem;
+}
+
+.form__input {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    border-radius: var(--border-radius);
+    border: 1px solid white;
+    outline: none;
+    background:white;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.form__input:focus {
+    border-color: var(--color-primary);
+    background: white;
+}
+
+.form__input--error {
+    color: var(--color-error);
+    border-color: var(--color-error);
+}
+
+.form__input-error-message {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--color-error);
+}
+
+.form__button {
+    width: 100%;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    outline: none;
+    cursor: pointer;
+    background: var(--color-primary);
+}
+
+.form__button:hover {
+    background: var(--color-primary-dark);
+}
+
+.form__button:active {
+    transform: scale(0.98);
+}
+
+.form__text {
+    text-align: center;
+}
+
+.form__link {
+    color: var(--color-secondary);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form__link:hover {
+    text-decoration: underline;
+}
