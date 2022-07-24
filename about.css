@@ -1,0 +1,66 @@
+.header-div{
+    background-color:black;
+    font-style:oblique;
+    font-size: 16px;
+  }
+  .header-div a{
+    color:white;
+    padding: 25px;
+    text-decoration: none;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+    font-size: 12.5px;
+  }
+  body, html{
+    height: 100%;
+    margin:0;
+    background-color:rgb(253, 246, 235);
+  }
+  .header-hover {
+    display: inline-block;
+    -webkit-transform: perspective(1px) translateZ(0);   
+  }
+  .header-hover:before {
+    content: "";
+    position: absolute;
+    padding:0px;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background:rgb(255, 238, 0);
+    height: 5px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    transition-duration: 0.3s;  
+  }
+  .header-hover:hover:before, .header-hover:focus:before, .header-hover:active:before {
+    right: 0;
+  }
+  #logo-img{
+    width:20px;
+    height:20px;
+  }
+  #login-header{
+    position: relative;
+    left: 68%;
+  }
+  #header-img{
+      height: 100%;
+      width: 100%;
+      
+  }
+  
+  #aboutus-text{
+      width: 50%;
+      float: left;
+      font-size: 23.7px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      background-image: url(Photos/cybbackground.jpg);
+      color: white;
+  }
+  #p-image-div{
+      width: 50%;
+      height: 87.5%;
+      float: right;
+      
+  }
+  
