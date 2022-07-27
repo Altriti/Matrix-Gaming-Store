@@ -39,6 +39,7 @@
             <h3 id="trending-div">TRENDING</h3>
             </div>
                 <div id="main-div">
+                    
                     <div class="madhsia">
                         <a href="https://www.cyberpunk.net/al/en/">
                         <img src="Photos/cyberpunk.jpg" id="img-size-cyberpunk" class="game-thumbnail">
@@ -155,7 +156,6 @@
                 </div>
 
 
-
             </div>
             <div id="recc-divsmall">
                 <h3 id="recommended-div">WE RECOMMEND</h3>
@@ -188,6 +188,60 @@
                     </div>
 
                 </div>
+                
+                <div style="height:700px;width:100%">
+                    <div>
+                        <h2 style="margin-left:17% ;font-weight:bolder">Coming soon</h2>
+                    </div>
+                    <div class="slideshow-container">
+
+                        <div class="mySlides fade">
+                          <div class="numbertext">1 / 3</div>
+                          <img src="../Matrix-Gaming-Store//Photos/overwatch2.jpg" style="width:100%">
+                          <div class="text">Overwatch 2</div>
+                        </div>
+                        
+                        <div class="mySlides fade">
+                          <div class="numbertext">2 / 3</div>
+                          <img src="../Matrix-Gaming-Store//Photos/god-of-war-ragnarok.jpg" style="width:100%">
+                          <div class="text">God of war Ragnarok </div>
+                        </div>
+                        
+                        <div class="mySlides fade">
+                          <div class="numbertext">3 / 3</div>
+                          <img src="../Matrix-Gaming-Store/.//Photos/steelrising.jpg" style="width:100%">
+                          <div class="text">Steel Rising</div>
+                        </div>
+                        
+                        </div>
+                        <br/>
+                        <div style="text-align:center">
+                            <span class="dot"></span> 
+                            <span class="dot"></span> 
+                            <span class="dot"></span> 
+                          </div>
+                </div>
+                <script>
+                    let slideIndex = 0;
+                    showSlides();
+                    
+                    function showSlides() {
+                      let i;
+                      let slides = document.getElementsByClassName("mySlides");
+                      let dots = document.getElementsByClassName("dot");
+                      for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";  
+                      }
+                      slideIndex++;
+                      if (slideIndex > slides.length) {slideIndex = 1}    
+                      for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                      }
+                      slides[slideIndex-1].style.display = "block";  
+                      dots[slideIndex-1].className += " active";
+                      setTimeout(showSlides, 2000); // Change image every 2 seconds
+                    }
+                    </script>
                 <div class="lets-play" > 
                     <hr style="margin-top: 30px; height:8px;border-width:0;color:rgb(87, 21, 21);background-color:rgb(87, 21, 21)">
                     <hr style="height:3px;border-width:0;background-color:rgb(87, 21, 21)">
@@ -220,17 +274,17 @@
 
                 <div id="footer-div">
                     <div id="footer-p">
-                        <p>Adress: Prizren, Kosovo</p>
-                        <p>Call:+38349117407</p>
+                        <p>Adress: Pristina, Kosovo</p>
+                        <p>Call:+38349555555</p>
                         <ul id="socials-footer">
                             <li><a href="#" id="facebook" class="socials-li"><img src="Photos/fblogo.png" alt="fb-logo" width="40px" height="40px"> </a></li>
                             <li><a href="#" id="instagram" class="socials-li"><img src="Photos/instagramlogo.png" alt="insta-logo" width="40px" height="40px"></a></li>
                             <li><a href="#" id="twitter" class="socials-li"><img src="Photos/twitterlogo.png" alt="twitter-logo" width="40px" height="40px"></a></li>
                             <li><a href="#" id="youtube" class="socials-li"><img src="Photos/youtubelogo.png" alt="youtube-logo" width="40px" height="40px"></a></li>
                         </ul>
-                        <img src="Photos/eplogobw.jpg" alt="ep-logo" height="80px">
+                        <img src="Photos/MatrixLogo.png" alt="matrix-logo" height="80px">
                         <p id="footer-div-second">Feel free to contact us through our support. We will do everything we can to help you.</p>
-                        <p id="cc">© 2021 Eassy Peasy client Inc. All rights reserved. Eveything you see in this page is copyright claimed and stealing will be punished. </p>
+                        <p id="cc">© 2022 Matrix client Inc. All rights reserved. Eveything you see in this page is copyright claimed and stealing will be punished. </p>
                     </div>
                     
                 </div>
